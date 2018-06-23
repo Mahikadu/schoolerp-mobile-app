@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlashActivity" >
+
+
+
+    <TextView
+        android:id="@+id/txtwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:text="Welcome to the eCampus!"
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:text="One more step towards paperless campus"
+        android:gravity="center"
+        android:layout_below="@+id/txtwelcome"
+        android:textSize="@dimen/_10sdp"
+        android:layout_centerVertical="true"/>
+
+
+
+</RelativeLayout>
