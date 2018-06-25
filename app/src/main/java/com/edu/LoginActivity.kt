@@ -133,7 +133,8 @@ class LoginActivity : AppCompatActivity(), LoaderCallbacks<Cursor> {
             // form field with an error.
             focusView?.requestFocus()
         } else {
-            val intent = Intent(this, HomeActivity::class.java)
+            //val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
 
             // Show a progress spinner, and kick off a background task to

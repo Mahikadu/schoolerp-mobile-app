@@ -8,14 +8,12 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-<!--
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
--->
 
-    <include
+    <!--<include
         android:id="@+id/container"
         layout="@layout/app_bar_navigation_drawer"
         android:layout_width="match_parent"
@@ -28,7 +26,7 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_home"
-        app:menu="@menu/activity_home_drawer" />
+        app:menu="@menu/activity_home_drawer" />-->
 
 </android.support.v4.widget.DrawerLayout>
 
