@@ -53,4 +53,41 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string-array name="bloodgroup">
+        <item>A +ve</item>
+        <item>A -ve</item>
+        <item>B +ve</item>
+        <item>B -ve</item>
+        <item>O +ve</item>
+        <item>O -ve</item>
+        <item>AB +ve</item>
+        <item>AB -ve</item>
+
+    </string-array>
+
+    <string-array name="category">
+        <item>Open</item>
+        <item>SC</item>
+        <item>ST</item>
+        <item>OBC</item>
+        <item>SBC</item>
+        <item>VJ</item>
+        <item>NT-B</item>
+        <item>NT-C</item>
+        <item>NT-D</item>
+    </string-array>
+
+    <string-array name="standard">
+        <item>1st</item>
+        <item>2nd</item>
+
+    </string-array>
+
+    <string-array name="division">
+        <item>A</item>
+        <item>B</item>
+        <item>All</item>
+
+    </string-array>
+
 </resources>
