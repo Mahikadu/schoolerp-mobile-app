@@ -29,7 +29,6 @@
     <string name="section_format">Hello World from section: %1$d</string>
 
 
-
     <string name="action_search">Search</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
@@ -52,6 +51,13 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="acadamicyear">
+        <item>2017-2018</item>
+        <item>2018-2019</item>
+
+    </string-array>
 
     <string-array name="bloodgroup">
         <item>A +ve</item>

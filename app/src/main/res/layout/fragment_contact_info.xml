@@ -9,7 +9,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/btn_next"
+        android:layout_above="@+id/btnlayout"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:gravity="center_horizontal"
-                    android:text="General Information"
+                    android:text="Contact Information"
                     android:textColor="#000000"
                     android:textSize="@dimen/_20sdp" />
 
@@ -58,53 +58,10 @@
                     <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/white">
-
-                        <AutoCompleteTextView
-                            android:id="@+id/spin_acdyear"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@color/white"
-                            android:clickable="false"
-                            android:completionThreshold="1"
-                            android:focusable="false"
-                            android:gravity="center_vertical"
-                            android:hint="Academic Year"
-                            android:imeOptions="actionNext"
-                            android:inputType="none"
-                            android:maxLength="50"
-                            android:nextFocusDown="@+id/spin_category"
-                            android:paddingLeft="@dimen/_10sdp"
-                            android:paddingRight="@dimen/_5sdp"
-                            android:singleLine="true"
-                            android:textIsSelectable="true"
-                            android:textSize="15sp"
-                            android:windowSoftInputMode="stateHidden" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/_5sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@android:color/white"
-                    android:visibility="visible"
-                    app:cardCornerRadius="@dimen/_3sdp"
-                    app:cardElevation="@dimen/_2sdp">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
                         android.support.design:hintTextAppearance="@style/TextInputLayout">
 
                         <EditText
-                            android:id="@+id/edt_rollno"
+                            android:id="@+id/edt_paddress"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:descendantFocusability="beforeDescendants"
@@ -112,55 +69,10 @@
                             android:focusable="false"
                             android:focusableInTouchMode="false"
                             android:gravity="start|center_vertical"
-                            android:hint="Roll No"
-                            android:inputType="number"
-                            android:longClickable="false"
-                            android:maxLength="20"
-                            android:maxLines="1"
-                            android:paddingEnd="@dimen/_10sdp"
-                            android:paddingLeft="@dimen/_10sdp"
-                            android:paddingRight="@dimen/_10sdp"
-                            android:paddingStart="@dimen/_10sdp"
-                            android:text=""
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/_5sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@android:color/white"
-                    android:visibility="visible"
-                    app:cardCornerRadius="@dimen/_3sdp"
-                    app:cardElevation="@dimen/_2sdp">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android.support.design:hintTextAppearance="@style/TextInputLayout">
-
-                        <EditText
-                            android:id="@+id/edt_fname"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:descendantFocusability="beforeDescendants"
-                            android:ems="10"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:gravity="start|center_vertical"
-                            android:hint="First Name"
+                            android:hint="Permanent Address"
                             android:inputType="text"
                             android:longClickable="false"
-                            android:maxLength="30"
+                            android:maxLength="50"
                             android:maxLines="1"
                             android:paddingEnd="@dimen/_10sdp"
                             android:paddingLeft="@dimen/_10sdp"
@@ -194,7 +106,7 @@
                         android.support.design:hintTextAppearance="@style/TextInputLayout">
 
                         <EditText
-                            android:id="@+id/edt_mname"
+                            android:id="@+id/edt_corsaddress"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:descendantFocusability="beforeDescendants"
@@ -202,10 +114,10 @@
                             android:focusable="false"
                             android:focusableInTouchMode="false"
                             android:gravity="start|center_vertical"
-                            android:hint="Middle Name"
+                            android:hint="Correspondence Address"
                             android:inputType="text"
                             android:longClickable="false"
-                            android:maxLength="30"
+                            android:maxLength="50"
                             android:maxLines="1"
                             android:paddingEnd="@dimen/_10sdp"
                             android:paddingLeft="@dimen/_10sdp"
@@ -239,7 +151,7 @@
                         android.support.design:hintTextAppearance="@style/TextInputLayout">
 
                         <EditText
-                            android:id="@+id/edt_lname"
+                            android:id="@+id/edt_country"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:descendantFocusability="beforeDescendants"
@@ -247,396 +159,7 @@
                             android:focusable="false"
                             android:focusableInTouchMode="false"
                             android:gravity="start|center_vertical"
-                            android:hint="Last Name"
-                            android:inputType="text"
-                            android:longClickable="false"
-                            android:maxLength="30"
-                            android:maxLines="1"
-                            android:paddingEnd="@dimen/_10sdp"
-                            android:paddingLeft="@dimen/_10sdp"
-                            android:paddingRight="@dimen/_10sdp"
-                            android:paddingStart="@dimen/_10sdp"
-                            android:text=""
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/_5sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@android:color/white"
-                    android:visibility="visible"
-                    app:cardCornerRadius="@dimen/_3sdp"
-                    app:cardElevation="@dimen/_2sdp">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android.support.design:hintTextAppearance="@style/TextInputLayout">
-
-                        <EditText
-                            android:id="@+id/edt_dob"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:descendantFocusability="beforeDescendants"
-                            android:ems="10"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:gravity="start|center_vertical"
-                            android:hint="Date of birth"
-                            android:inputType="none"
-                            android:longClickable="false"
-                            android:maxLines="1"
-                            android:paddingEnd="@dimen/_10sdp"
-                            android:paddingLeft="@dimen/_10sdp"
-                            android:paddingRight="@dimen/_10sdp"
-                            android:paddingStart="@dimen/_10sdp"
-                            android:text=""
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:textStyle="bold"
-                            android:windowSoftInputMode="stateHidden" />
-
-
-                    </android.support.design.widget.TextInputLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <RadioGroup
-                    android:id="@+id/radio_gr"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView1"
-                    android:layout_marginBottom="@dimen/_5sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:orientation="horizontal"
-                    android:weightSum="2">
-
-                    <RadioButton
-                        android:id="@+id/rb_male"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginLeft="@dimen/_50sdp"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:text="Male"
-                        android:textColor="#000000"
-                        android:textSize="@dimen/_12sdp" />
-
-                    <RadioButton
-                        android:id="@+id/rb_female"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginLeft="@dimen/_50sdp"
-                        android:layout_weight="1"
-                        android:text="Female"
-                        android:textColor="#000000"
-                        android:textSize="@dimen/_12sdp" />
-
-
-                </RadioGroup>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/_5sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@android:color/white"
-                    android:visibility="visible"
-                    app:cardCornerRadius="@dimen/_3sdp"
-                    app:cardElevation="@dimen/_2sdp">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/white">
-
-                        <AutoCompleteTextView
-                            android:id="@+id/spin_blood"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@color/white"
-                            android:clickable="false"
-                            android:completionThreshold="1"
-                            android:focusable="false"
-                            android:gravity="center_vertical"
-                            android:hint="Blood Group"
-                            android:imeOptions="actionNext"
-                            android:inputType="none"
-                            android:maxLength="50"
-                            android:nextFocusDown="@+id/spin_category"
-                            android:paddingLeft="@dimen/_10sdp"
-                            android:paddingRight="@dimen/_5sdp"
-                            android:singleLine="true"
-                            android:textIsSelectable="true"
-                            android:textSize="15sp"
-                            android:windowSoftInputMode="stateHidden" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/_5sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@android:color/white"
-                    android:visibility="visible"
-                    app:cardCornerRadius="@dimen/_3sdp"
-                    app:cardElevation="@dimen/_2sdp">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/white">
-
-                        <AutoCompleteTextView
-                            android:id="@+id/spin_category"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@color/white"
-                            android:clickable="false"
-                            android:completionThreshold="1"
-                            android:focusable="false"
-                            android:gravity="center_vertical"
-                            android:hint="Category"
-                            android:imeOptions="actionNext"
-                            android:inputType="none"
-                            android:maxLength="50"
-                            android:nextFocusDown="@+id/spin_category"
-                            android:paddingLeft="@dimen/_10sdp"
-                            android:paddingRight="@dimen/_5sdp"
-                            android:singleLine="true"
-                            android:textIsSelectable="true"
-                            android:textSize="15sp"
-                            android:windowSoftInputMode="stateHidden" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/_5sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@android:color/white"
-                    android:visibility="visible"
-                    app:cardCornerRadius="@dimen/_3sdp"
-                    app:cardElevation="@dimen/_2sdp">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android.support.design:hintTextAppearance="@style/TextInputLayout">
-
-                        <EditText
-                            android:id="@+id/edt_religion"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:descendantFocusability="beforeDescendants"
-                            android:ems="10"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:gravity="start|center_vertical"
-                            android:hint="Religion"
-                            android:inputType="text"
-                            android:longClickable="false"
-                            android:maxLength="20"
-                            android:maxLines="1"
-                            android:paddingEnd="@dimen/_10sdp"
-                            android:paddingLeft="@dimen/_10sdp"
-                            android:paddingRight="@dimen/_10sdp"
-                            android:paddingStart="@dimen/_10sdp"
-                            android:text=""
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/_5sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@android:color/white"
-                    android:visibility="visible"
-                    app:cardCornerRadius="@dimen/_3sdp"
-                    app:cardElevation="@dimen/_2sdp">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android.support.design:hintTextAppearance="@style/TextInputLayout">
-
-                        <EditText
-                            android:id="@+id/edt_cast"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:descendantFocusability="beforeDescendants"
-                            android:ems="10"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:gravity="start|center_vertical"
-                            android:hint="Cast"
-                            android:inputType="text"
-                            android:longClickable="false"
-                            android:maxLength="20"
-                            android:maxLines="1"
-                            android:paddingEnd="@dimen/_10sdp"
-                            android:paddingLeft="@dimen/_10sdp"
-                            android:paddingRight="@dimen/_10sdp"
-                            android:paddingStart="@dimen/_10sdp"
-                            android:text=""
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/_5sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@android:color/white"
-                    android:visibility="visible"
-                    app:cardCornerRadius="@dimen/_3sdp"
-                    app:cardElevation="@dimen/_2sdp">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/white">
-
-                        <AutoCompleteTextView
-                            android:id="@+id/spin_std"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@color/white"
-                            android:clickable="false"
-                            android:completionThreshold="1"
-                            android:focusable="false"
-                            android:gravity="center_vertical"
-                            android:hint="Standard"
-                            android:imeOptions="actionNext"
-                            android:inputType="none"
-                            android:maxLength="50"
-                            android:nextFocusDown="@+id/spin_category"
-                            android:paddingLeft="@dimen/_10sdp"
-                            android:paddingRight="@dimen/_5sdp"
-                            android:singleLine="true"
-                            android:textIsSelectable="true"
-                            android:textSize="15sp"
-                            android:windowSoftInputMode="stateHidden" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/_5sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@android:color/white"
-                    android:visibility="visible"
-                    app:cardCornerRadius="@dimen/_3sdp"
-                    app:cardElevation="@dimen/_2sdp">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/white">
-
-                        <AutoCompleteTextView
-                            android:id="@+id/spin_div"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@color/white"
-                            android:clickable="false"
-                            android:completionThreshold="1"
-                            android:focusable="false"
-                            android:gravity="center_vertical"
-                            android:hint="Division"
-                            android:imeOptions="actionNext"
-                            android:inputType="none"
-                            android:maxLength="50"
-                            android:nextFocusDown="@+id/spin_category"
-                            android:paddingLeft="@dimen/_10sdp"
-                            android:paddingRight="@dimen/_5sdp"
-                            android:singleLine="true"
-                            android:textIsSelectable="true"
-                            android:textSize="15sp"
-                            android:windowSoftInputMode="stateHidden" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/_5sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@android:color/white"
-                    android:visibility="visible"
-                    app:cardCornerRadius="@dimen/_3sdp"
-                    app:cardElevation="@dimen/_2sdp">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android.support.design:hintTextAppearance="@style/TextInputLayout">
-
-                        <EditText
-                            android:id="@+id/edt_nationality"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:descendantFocusability="beforeDescendants"
-                            android:ems="10"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:gravity="start|center_vertical"
-                            android:hint="Nationality"
+                            android:hint="Country"
                             android:inputType="text"
                             android:longClickable="false"
                             android:maxLength="20"
@@ -646,7 +169,233 @@
                             android:paddingLeft="@dimen/_10sdp"
                             android:paddingRight="@dimen/_10sdp"
                             android:paddingStart="@dimen/_10sdp"
-                            android:text="Indian"
+                            android:text="India"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@android:color/white"
+                    android:visibility="visible"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android.support.design:hintTextAppearance="@style/TextInputLayout">
+
+                        <EditText
+                            android:id="@+id/edt_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:descendantFocusability="beforeDescendants"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="start|center_vertical"
+                            android:hint="State"
+                            android:inputType="text"
+                            android:longClickable="false"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:editable="false"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Maharashtra"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@android:color/white"
+                    android:visibility="visible"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android.support.design:hintTextAppearance="@style/TextInputLayout">
+
+                        <EditText
+                            android:id="@+id/edt_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:descendantFocusability="beforeDescendants"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="start|center_vertical"
+                            android:hint="City"
+                            android:inputType="text"
+                            android:longClickable="false"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@android:color/white"
+                    android:visibility="visible"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android.support.design:hintTextAppearance="@style/TextInputLayout">
+
+                        <EditText
+                            android:id="@+id/edt_pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:descendantFocusability="beforeDescendants"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="start|center_vertical"
+                            android:hint="Postal Code"
+                            android:inputType="number"
+                            android:longClickable="false"
+                            android:maxLength="6"
+                            android:maxLines="1"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@android:color/white"
+                    android:visibility="visible"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android.support.design:hintTextAppearance="@style/TextInputLayout">
+
+                        <EditText
+                            android:id="@+id/edt_doctername"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:descendantFocusability="beforeDescendants"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="start|center_vertical"
+                            android:hint="Doctor Name"
+                            android:inputType="text"
+                            android:longClickable="false"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@android:color/white"
+                    android:visibility="visible"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android.support.design:hintTextAppearance="@style/TextInputLayout">
+
+                        <EditText
+                            android:id="@+id/edt_docterno"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:descendantFocusability="beforeDescendants"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="start|center_vertical"
+                            android:hint="Doctor Phone No"
+                            android:inputType="number"
+                            android:longClickable="false"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text=""
                             android:textColor="#000000"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -656,22 +405,54 @@
                 </android.support.v7.widget.CardView>
 
             </LinearLayout>
-
         </RelativeLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/btn_next"
-        android:layout_width="@dimen/_120sdp"
+    <LinearLayout
+        android:id="@+id/btnlayout"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/_35sdp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
         android:layout_gravity="center"
         android:layout_marginBottom="@dimen/_5sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:background="@drawable/ripple_login"
-        android:padding="@dimen/_5sdp"
-        android:text="Next"
-        android:textColor="#ffffff"
-        android:textStyle="bold" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/btn_cprevious"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/ripple_login"
+            android:text="Previous"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_cnext"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/ripple_login"
+            android:text="Next"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
 </RelativeLayout>
