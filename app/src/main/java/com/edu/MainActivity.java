@@ -105,5 +105,10 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
             getSupportActionBar().setTitle(title);
         }
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }
 

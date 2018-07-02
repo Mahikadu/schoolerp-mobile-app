@@ -6,6 +6,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -120,9 +122,19 @@ public class ContactInfoFragment extends Fragment implements View.OnClickListene
         switch (id) {
 
             case R.id.btn_cnext:
+                Fragment parentinfo = new ParentsInfoFragment();
+                FragmentManager fm = getFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.container_body, parentinfo);
+                ft.commit();
                 break;
 
             case R.id.btn_cprevious:
+                Fragment contactinfo = new StudentFragment();
+                FragmentManager fmp = getFragmentManager();
+                FragmentTransaction ftp = fmp.beginTransaction();
+                ftp.replace(R.id.container_body, contactinfo);
+                ftp.commit();
                 break;
 
         }
